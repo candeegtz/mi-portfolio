@@ -12,10 +12,10 @@ export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0); 
     const [isDeleting, setIsDeleting] = useState(false); // Para saber si la palabra se está escribiendo o no
-    const toRotate = t("rotatingTexts", {returnObjets: true}); // array de textos a rotar
+    const toRotate = t("rotatingTexts", {returnObjects: true}); // array de textos a rotar
     const [text, setText] = useState(''); // texto que se va a mostrar: ej -> We...
     const period = 2000; // tiempo de espera entre cada palabra 
-    const [delta, setDelta] = useState(300 - Math.random() * 100); // velocidad de escritura
+    const [delta, setDelta] = useState(300 - Math.random() * 200); // velocidad de escritura
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -47,9 +47,9 @@ export const Banner = () => {
     }
 
     return (
-        <section classname ="banner">
+        <section className="banner">
             <Container>
-                <Row className ="align-items-center">
+                <Row className="align-items-center"> 
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> {t("welcome")} </span>
                         <h1> {t("iam")}<span className="wrap"> {text} </span></h1>
@@ -63,7 +63,7 @@ export const Banner = () => {
                         </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img"/>
+                        <img src={headerImg} alt="Header Img" className="img-fluid" /> {/* <-- img-fluid para responsividad */}
                     </Col>
                 </Row>
             </Container>
