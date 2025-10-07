@@ -9,19 +9,14 @@ function App() {
     <div className="App">
       <Background />
         <header className="App-header">
-          <Button variant="primary">Primary</Button>
-          <img src={logo} className="App-logo" alt="logo" />
           <Banner/>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/candeegtz"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Github: candeegtz
           </a>
         </header>
     </div>
