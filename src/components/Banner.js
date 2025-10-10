@@ -54,10 +54,17 @@ export const Banner = () => {
                         <span className="tagline"> {t("welcome")} </span>
                         <h1> {t("iam")}<span className="wrap"> {text} </span></h1>
                         <p> {t("intro")}</p>
-                         {/*<button onClick={() => console.log('connect')}>
+                         <a
+                            href="/cv.pdf"
+                            download
+                            className="btn btn-primary"
+                            style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+                            >
+                            {t("cv")} <ArrowRightCircle size={25} />
+                        </a>
+                        {/*<button onClick={() => console.log('connect')}>
                             Let's connect <ArrowRightCircle size={25}></ArrowRightCircle> 
-                        </button>
-                        ^*/}
+                        </button>*/}
                         <div style={{ marginTop: "10px" }}>
                             <button onClick={() => changeLanguage("es")}>ES</button>
                             <button onClick={() => changeLanguage("en")}>EN</button>
