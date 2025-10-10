@@ -7,18 +7,18 @@ i18n.use(initReactI18next).init({
       translation: {
         welcome: "Welcome to my portfolio!",
         iam: "Hi, I'm Candela and I'm a ",
-        intro: "Something as an introduction",
+        intro: "Final-year Software Engineering student at the University of Seville, highly motivated to expand my knowledge in the fields of Artificial Intelligence (AI) and Software as a Service (SaaS) development and design",
         button: "Let's connect",
-        rotatingTexts: ["Web Developer", "Web Designer", "UI/UX Designer"]
+        rotatingTexts: ["Web Developer", "Web Designer", "SaaS Developer"]
       }
     },
     es: {
       translation: {
         welcome: "¡Bienvenido/a a mi portfolio!",
         iam: "Hola, mi nombre es Candela y soy ",
-        intro: "Lo que sea como una introducción",
+        intro: "Estudiante de último año de Ingeneiería Software en la Universidad de Sevilla interesada en ampliar mis conocimientos en el campo de inteligencia artificial y desarrollo y diseño de SaaS.",
         button: "Contáctame",
-        rotatingTexts: ["Desarrollador Web", "Diseñador Web", "UI/UX Designer"]
+        rotatingTexts: ["Desarrolladora Web", "Diseñadora Web", "Desarrolladora de SaaS"]
       }
     }
   },
