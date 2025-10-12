@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
       translation: {
         welcome: "¡Bienvenido/a a mi portfolio!",
         iam: "Hola, mi nombre es Candela y soy ",
-        intro: "Estudiante de último año de Ingeneiería Software en la Universidad de Sevilla interesada en ampliar mis conocimientos en el campo de inteligencia artificial y desarrollo y diseño de SaaS.",
+        intro: "Estudiante de último año de Ingeniería Software en la Universidad de Sevilla interesada en ampliar mis conocimientos en el campo de inteligencia artificial y desarrollo y diseño de SaaS.",
         button: "Contáctame",
         rotatingTexts: ["Desarrolladora Web", "Diseñadora Web", "Desarrolladora de SaaS"],
         cv: "Descargar CV"
