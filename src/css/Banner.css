@@ -1,0 +1,13 @@
+.btn.banner-btn {
+  background-color: #b61251ff;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.btn.banner-btn:hover, .btn.cv-btn:focus {
+  border-color: #ffd700;
+  background-color: #b61251ff;
+  color: #ffd700;
+}

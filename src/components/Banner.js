@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from '../img/headerImg.png';
-import "./i18n";
+import "./i18n/i18n-banner";
 import { useTranslation } from "react-i18next";
+import "../css/Banner.css";
 
 export const Banner = () => {
 
@@ -55,10 +56,13 @@ export const Banner = () => {
                         <h1> {t("iam")}<span className="wrap"> {text} </span></h1>
                         <p> {t("intro")}</p>
                          <a
-                            href="/cv.pdf"
+                            href="/Candela-Gutiérrez-cv.pdf"
                             download
-                            className="btn btn-primary"
-                            style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+                            className="btn banner-btn"
+                            style={{ 
+                                display: "inline-flex", 
+                                alignItems: "center", 
+                                gap: "8px"}}
                             >
                             {t("cv")} <ArrowRightCircle size={25} />
                         </a>
@@ -66,8 +70,8 @@ export const Banner = () => {
                             Let's connect <ArrowRightCircle size={25}></ArrowRightCircle> 
                         </button>*/}
                         <div style={{ marginTop: "10px" }}>
-                            <button onClick={() => changeLanguage("es")}>ES</button>
-                            <button onClick={() => changeLanguage("en")}>EN</button>
+                            <button className= "btn banner-btn" onClick={() => changeLanguage("es")}>ES</button>
+                            <button className= "btn banner-btn" onClick={() => changeLanguage("en")}>EN</button>
                         </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
