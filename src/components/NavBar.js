@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./i18n";
 import { useTranslation } from "react-i18next";
-import { useState, useEffect } from 'react'; 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 // importar elementos de pagina cuando se tengan
@@ -24,7 +23,7 @@ export const NavBar = () => {
 
     // Función que recibe el estado de activo de React Router
     const getNavLinkClass = ({ isActive }) => {
-        return `btn navbar-btn ${isActive ? 'active' : ''}`;
+        return `navbar-btn ${isActive ? 'active' : ''}`;
     };
 
     // Función para el Dropdown: Comprueba si alguna sub-ruta está activa
@@ -57,7 +56,7 @@ export const NavBar = () => {
                     title={t("proyects")} 
                     id="basic-nav-dropdown" 
                     // Aplica la clase 'active' al contenedor si alguna ruta de proyecto está activa
-                    className={`btn navbar-btn ${isProjectRouteActive ? 'active' : ''}`}
+                    className={`navbar-btn ${isProjectRouteActive ? 'active' : ''}`}
                 >
                     {projects.map((project, index) => (
                         <NavDropdown.Item

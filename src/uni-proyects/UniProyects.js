@@ -1,4 +1,4 @@
-export const UniProyects = () => {
+const UniProyects = () => {
     return (
         <div>
             <h1>UniProyects Page</h1>
