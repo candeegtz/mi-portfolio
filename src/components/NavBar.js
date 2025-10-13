@@ -5,7 +5,8 @@ import "./i18n";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from 'react'; 
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Link, NavLink, useLocation } from 'react-router-dom';
+// importar elementos de pagina cuando se tengan
 
 import "../css/Banner.css";
 import "../css/NavBar.css";
@@ -14,58 +15,62 @@ export const NavBar = () => {
 
     const { t, i18n } = useTranslation();
     const changeLanguage = (lang) => i18n.changeLanguage(lang);
-    const [activeSection, setActiveSection] = useState('home'); // Estado para la sección activa
+    const location = useLocation(); 
+    
     const projects = [
-        { id: 'pUni', link: '#university-proyects',label: t("pUni") },
-        { id: 'pPersonal', link: '#personal-proyects', label: t("pPersonal") }
+        { link: '/university-proyects', label: t("pUni") },
+        { link: '/personal-proyects', label: t("pPersonal") }
     ];
 
-
-    // Función para manejar el cambio de sección activa
-    const handleSectionChange = (section) => {
-        setActiveSection(section);
+    // Función que recibe el estado de activo de React Router
+    const getNavLinkClass = ({ isActive }) => {
+        return `btn navbar-btn ${isActive ? 'active' : ''}`;
     };
 
-    useEffect(() => {
-        const element = document.getElementById(activeSection);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, [activeSection]);
+    // Función para el Dropdown: Comprueba si alguna sub-ruta está activa
+    const isProjectRouteActive = projects.some(p => location.pathname.startsWith(p.link));
+
 
     return (
         <Navbar expand="lg" className="nav-bar">
         <Container>
-            <Navbar.Brand href="#home"  style={{color: '#fff'}}>Candela Gutiérrez</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" style={{color: '#fff'}}>Candela Gutiérrez</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link
-                    href="#home"
-                    className={`btn navbar-btn ${activeSection === 'home' ? 'active' : ''}`}
-                    onClick={() => handleSectionChange('home')}
+                    as={NavLink} 
+                    to="/"
+                    className={getNavLinkClass}
+                    end // Evita que se active en TODAS las rutas que empiezan por /
                 >
                     {t("home")}
                 </Nav.Link>
                 <Nav.Link
-                    href="#contact"
-                    className={`btn navbar-btn ${activeSection === 'contact' ? 'active' : ''}`}
-                    onClick={() => handleSectionChange('contact')}
+                    as={NavLink} 
+                    to="/contact"
+                    className={getNavLinkClass}
                 >
                     {t("contact")}
                 </Nav.Link>
-                 <NavDropdown title={t("proyects")} id="basic-nav-dropdown" className={`btn navbar-btn ${projects.some(p => p.id === activeSection) ? 'active' : ''}`}>
-                    {projects.map(project => (
+                <NavDropdown 
+                    title={t("proyects")} 
+                    id="basic-nav-dropdown" 
+                    // Aplica la clase 'active' al contenedor si alguna ruta de proyecto está activa
+                    className={`btn navbar-btn ${isProjectRouteActive ? 'active' : ''}`}
+                >
+                    {projects.map((project, index) => (
                         <NavDropdown.Item
-                            key={project.id}
-                            href={`#${project.link}`}
-                            onClick={() => handleSectionChange(project.id)}
+                            key={index}
+                            as={Link} 
+                            to={project.link}
+                            // Opcional: Para resaltar el Dropdown.Item en sí, usa una clase condicional
+                            className={location.pathname === project.link ? 'dropdown-item-active' : ''}
                         >
                             {project.label}
                         </NavDropdown.Item>
                     ))}
                 </NavDropdown>
-
             </Nav>
                 <div className="ms-auto">
                     <button 

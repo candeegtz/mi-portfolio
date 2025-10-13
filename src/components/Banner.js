@@ -6,6 +6,7 @@ import "./i18n";
 import { useTranslation } from "react-i18next";
 import "../css/Banner.css";
 
+
 export const Banner = () => {
 
     const { t, i18n } = useTranslation();
