@@ -1,0 +1,20 @@
+.nav-bar {
+    background-color: #390101 !important; 
+    color: #fff;
+}
+
+.btn.navbar-btn {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.btn.navbar-btn:hover {
+  color: #ffd700;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+.btn.navbar-btn.active {
+  color: #ffd700;
+}

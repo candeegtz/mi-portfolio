@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from '../img/headerImg.png';
-import "./i18n/i18n-banner";
+import "./i18n";
 import { useTranslation } from "react-i18next";
 import "../css/Banner.css";
 
 export const Banner = () => {
 
     const { t, i18n } = useTranslation();
-    const changeLanguage = (lang) => i18n.changeLanguage(lang);
 
     const [loopNum, setLoopNum] = useState(0); 
     const [isDeleting, setIsDeleting] = useState(false); // Para saber si la palabra se está escribiendo o no
@@ -66,13 +65,6 @@ export const Banner = () => {
                             >
                             {t("cv")} <ArrowRightCircle size={25} />
                         </a>
-                        {/*<button onClick={() => console.log('connect')}>
-                            Let's connect <ArrowRightCircle size={25}></ArrowRightCircle> 
-                        </button>*/}
-                        <div style={{ marginTop: "10px" }}>
-                            <button className= "btn banner-btn" onClick={() => changeLanguage("es")}>ES</button>
-                            <button className= "btn banner-btn" onClick={() => changeLanguage("en")}>EN</button>
-                        </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" className="img-fluid" /> {/* <-- img-fluid para responsividad */}

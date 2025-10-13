@@ -1,13 +1,15 @@
 .btn.banner-btn {
-  background-color: #b61251ff;
+  background-color: #750000  ;
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 6px;
+  border: 3px solid #fff;
+  border-radius: 20px;
   transition: border-color 0.3s, background 0.3s;
 }
 
-.btn.banner-btn:hover, .btn.cv-btn:focus {
+.btn.banner-btn:hover {
   border-color: #ffd700;
-  background-color: #b61251ff;
+  background-color: #750000 ;
   color: #ffd700;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.07); 
 }
