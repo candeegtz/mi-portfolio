@@ -31,7 +31,15 @@ i18n.use(initReactI18next).init({
         galleryTitle: "Project Gallery",
 
         // Traducciones de Skull King
-        skullKingIntro: "This project is a digital adaptation of the popular card game 'Skull King'. It was developed as part of the 'Language Processors' course, where the main goal was to create a domain-specific language (DSL) with ANTLR to define the game's rules and logic. The graphical interface was implemented with Java Swing."
+        skullKingIntro: "This project is a digital adaptation of the popular card game 'Skull King'. It was developed as part of the 'Language Processors' course, where the main goal was to create a domain-specific language (DSL) with ANTLR to define the game's rules and logic. The graphical interface was implemented with Java Swing.",
+        newsAnalysisIntro: "Intro de analysis",
+        
+
+        // Traducciones de PersonalProyects
+        title: "Personal Projects",
+        introUP: "In my free time, I've had some ideas for new proyects...",
+        descriptionMarioLevel: "A digital version of the 'Skull King' card game",
+        descriptionImgCleaner: "description analysis",
         
       }
     },

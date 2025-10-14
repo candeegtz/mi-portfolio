@@ -56,6 +56,24 @@ import background52 from "../img/background52.jpeg";
 import background53 from "../img/background53.jpeg";
 import background54 from "../img/background54.jpeg";
 import background55 from "../img/background55.jpeg";
+import background56 from "../img/background56.jpeg";
+import background57 from "../img/background57.jpeg";
+import background58 from "../img/background58.jpeg";
+import background59 from "../img/background59.jpeg";
+import background60 from "../img/background60.jpeg";
+import background61 from "../img/background61.jpeg";
+import background62 from "../img/background62.jpeg";
+import background63 from "../img/background63.jpeg";
+import background64 from "../img/background64.jpeg";
+import background65 from "../img/background65.jpeg";
+import background66 from "../img/background66.jpeg";
+import background67 from "../img/background67.jpeg";
+import background68 from "../img/background68.jpeg";
+import background69 from "../img/background69.jpeg";
+import background70 from "../img/background70.jpeg";
+import background71 from "../img/background71.jpeg";
+import background72 from "../img/background72.jpeg";
+
 
 const images = [background1, background2, background3, background4, background5, 
     background6, background7, background8, background9, background10, background11, 
@@ -67,6 +85,12 @@ const images = [background1, background2, background3, background4, background5,
     background42, background43, background44, background45, background46, background47,
     background48, background49, background50, background51, background52, background53,
     background54, background55];
+
+    /* Imagenes sobrantes
+    background56, background57, background58, background59,
+    background60, background61, background62, background63, background64, background65,
+    background66, background67, background68, background69, background70, background71,
+    background72*/
 
 function shuffle(array) {
     // Algoritmo de Fisher-Yatess

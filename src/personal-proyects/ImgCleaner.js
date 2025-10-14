@@ -38,7 +38,7 @@ export const ImgCleanerPage = () => {
             </section>
  
             <section className="project-section">
-                <h2>Galería del Proyecto</h2>
+                <h2>{t('galleryTitle')}</h2>
                 <div className="image-gallery">
                     <p>Próximamente se añadirán imágenes del proyecto.</p>
                 </div>
