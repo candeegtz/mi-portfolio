@@ -19,6 +19,8 @@ export const ImgCleanerPage = () => {
         // { src: skullKingImage2, alt: "Ejemplo de una jugada" }
     ];
 
+    
+
     return (
         <div className="project-page">
             <header className="project-page-header">

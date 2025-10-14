@@ -5,7 +5,6 @@ import "./i18n";
 import { useTranslation } from "react-i18next";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-// importar elementos de pagina cuando se tengan
 
 import "../css/Banner.css";
 import "../css/NavBar.css";
@@ -41,7 +40,7 @@ export const NavBar = () => {
                     as={NavLink} 
                     to="/"
                     className={getNavLinkClass}
-                    end // Evita que se active en TODAS las rutas que empiezan por /
+                    end 
                 >
                     {t("home")}
                 </Nav.Link>
@@ -55,7 +54,6 @@ export const NavBar = () => {
                 <NavDropdown 
                     title={t("proyects")} 
                     id="basic-nav-dropdown" 
-                    // Aplica la clase 'active' al contenedor si alguna ruta de proyecto está activa
                     className={`navbar-btn ${isProjectRouteActive ? 'active' : ''}`}
                 >
                     {projects.map((project, index) => (
@@ -63,7 +61,6 @@ export const NavBar = () => {
                             key={index}
                             as={Link} 
                             to={project.link}
-                            // Opcional: Para resaltar el Dropdown.Item en sí, usa una clase condicional
                             className={location.pathname === project.link ? 'dropdown-item-active' : ''}
                         >
                             {project.label}

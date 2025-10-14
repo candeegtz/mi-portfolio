@@ -2,7 +2,7 @@ import '../css/ProjectPage.css'; // Estilos para la página del proyecto
 import { useTranslation } from "react-i18next";
 import "../components/i18n";
 
-export const ImgCleanerPage = () => {
+export const NewsAnalysisPage = () => {
 
     const { t, i18n } = useTranslation();
     // Lista de tecnologías que utilizaste
@@ -18,6 +18,8 @@ export const ImgCleanerPage = () => {
         // { src: skullKingImage1, alt: "Vista del tablero de juego" },
         // { src: skullKingImage2, alt: "Ejemplo de una jugada" }
     ];
+
+    
 
     return (
         <div className="project-page">
@@ -45,4 +47,4 @@ export const ImgCleanerPage = () => {
     )
 }
 
-export default ImgCleanerPage;
+export default NewsAnalysisPage;
