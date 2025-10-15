@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from '../img/headerImg.png';
 import "./i18n";
-import { useTranslation } from "react-i18next";
-import cvFile from '../../public/Candela-Gutiérrez-CV.pdf'; 
+import { useTranslation } from "react-i18next"; 
 import "../css/Banner.css";
 
 
@@ -57,7 +56,7 @@ export const Banner = () => {
                         <p> {t("intro")}</p>
                         <div>
                             <a
-                                href={cvFile} 
+                                href={`${process.env.PUBLIC_URL}/Candela-Gutierrez-CV.pdf`} 
                                 download
                                 className="btn banner-btn"
                                 style={{ display: "inline-flex", alignItems: "center", gap: "8px"}}
