@@ -24,9 +24,29 @@ export const ImgCleanerPage = () => {
     return (
         <div className="project-page">
             <header className="project-page-header">
-                <h1>{t('descriptionSkullKing')}</h1>
-                <p>{t('skullKingIntro')}</p>
+                <h1>Photo Cleaner</h1>
+                <p>{t('imgCleanerIntro')} </p>
+                <p>{t('imgCleanerIntro2')} </p>
+                <p>{t('imgCleanerIntro3')} </p>
+                <p>{t('imCleanerActual')} </p>
             </header>
+
+            {/*
+            <section className="project-section">
+                <h2>{t('objTitle')}</h2>
+                <div>
+                    <p>{t('imgCleanerObj')}</p>
+                </div>
+            </section>
+
+            <section className="project-section">
+                <h2>{t('lectionsTitle')}</h2>
+                <div>
+                    {t("imgCleanerLections", { returnObjects: true }).map((lection, index) => (
+                    <p key={index}>{lection}</p>
+                ))}
+                </div>
+            </section>
 
             <section className="project-section">
                 <h2>{t('techTitle')}</h2>
@@ -36,6 +56,22 @@ export const ImgCleanerPage = () => {
                     ))}
                 </ul>
             </section>
+
+            <section className="project-section">
+                <h2>{t('linkRepo')}</h2>
+                <div className="repo-link-container">
+                    <a href="https://github.com/candeegtz/Acme-ANS" target="_blank" rel="noopener noreferrer" className="repo-link-button">
+                        Mario Level
+                    </a>
+                </div>
+            </section>
+
+            <section className="project-section">
+                <h2>{t('conclusionTitle')}</h2>
+                <div>
+                    <p>{t('imgCleanerConclusion')}</p>
+                </div>
+            </section>
  
             <section className="project-section">
                 <h2>{t('galleryTitle')}</h2>
@@ -43,6 +79,7 @@ export const ImgCleanerPage = () => {
                     <p>Próximamente se añadirán imágenes del proyecto.</p>
                 </div>
             </section>
+            */}
         </div>
     )
 }

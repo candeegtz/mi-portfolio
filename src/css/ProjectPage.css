@@ -36,10 +36,23 @@
     max-width: 800px;
     margin: 0 auto;
     color: #e0e0e0;
+    text-align: justify;
+    margin-bottom: 1em;
 }
 
 .project-section {
     margin-bottom: 50px;
+}
+
+.project-section p{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    text-align: justify;
+    margin-bottom: 1em;
 }
 
 .project-section h2 {
@@ -59,10 +72,33 @@
 }
 
 .tech-list li {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.347);
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 1rem;
+}
+
+.repo-link-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px;
+}
+
+.repo-link-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:rgba(255, 255, 255, 0.347); /* Color amarillo, como los elementos activos */
+    color: #ffffff !important; /* Color del texto oscuro para que contraste */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.repo-link-button:hover {
+    transform: scale(1.05);
+    background-color: #ffec80; /* Un amarillo un poco más claro al pasar el ratón */
+    color: #390101 !important;
 }
 
 .image-gallery p {

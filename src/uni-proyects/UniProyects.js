@@ -31,7 +31,7 @@ const UniProyects = () => {
     return (
         <div className="uni-projects-page">
             <header className="projects-header">
-                <h1>{t('title')}</h1>
+                <h1>{t('titleUP')}</h1>
                 <p>{t('introUP')}</p>
             </header>
 

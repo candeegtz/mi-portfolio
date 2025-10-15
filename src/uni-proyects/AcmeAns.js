@@ -8,9 +8,9 @@ export const AcmeAnsPage = () => {
     // Lista de tecnologías que utilizaste
     const technologies = [
         "Java",
-        "ANTLR",
-        "Java Swing",
-        "Gradle"
+        "Framework Acme-Ans",
+        "HTMLTrackElement",
+        "MariaDB"
     ];
 
     // Array para las imágenes de la galería
@@ -24,9 +24,26 @@ export const AcmeAnsPage = () => {
     return (
         <div className="project-page">
             <header className="project-page-header">
-                <h1>{t('descriptionSkullKing')}</h1>
-                <p>{t('skullKingIntro')}</p>
+                <h1>Acme ANS</h1>
+                <p>{t('acmeAnsIntro')} </p>
+                <p>{t('acmeAnsIntro2')} </p>
             </header>
+
+            <section className="project-section">
+                <h2>{t('objTitle')}</h2>
+                <div>
+                    <p>{t('acmeAnsObj')}</p>
+                </div>
+            </section>
+
+            <section className="project-section">
+                <h2>{t('lectionsTitle')}</h2>
+                <div>
+                    {t("acmeAnsLections", { returnObjects: true }).map((lection, index) => (
+                    <p key={index}>{lection}</p>
+                ))}
+                </div>
+            </section>
 
             <section className="project-section">
                 <h2>{t('techTitle')}</h2>
@@ -36,9 +53,25 @@ export const AcmeAnsPage = () => {
                     ))}
                 </ul>
             </section>
+
+            <section className="project-section">
+                <h2>{t('linkRepo')}</h2>
+                <div className="repo-link-container">
+                    <a href="https://github.com/candeegtz/Acme-ANS" target="_blank" rel="noopener noreferrer" className="repo-link-button">
+                        Acme ANS
+                    </a>
+                </div>
+            </section>
+
+            <section className="project-section">
+                <h2>{t('conclusionTitle')}</h2>
+                <div>
+                    <p>{t('acmeAnsConclusion')}</p>
+                </div>
+            </section>
  
             <section className="project-section">
-                <h2>Galería del Proyecto</h2>
+                <h2>{t('galleryTitle')}</h2>
                 <div className="image-gallery">
                     <p>Próximamente se añadirán imágenes del proyecto.</p>
                 </div>

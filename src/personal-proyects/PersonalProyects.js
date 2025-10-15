@@ -1,18 +1,22 @@
 import { Link } from 'react-router-dom';
 import '../css/Proyects.css'; // Crearemos este archivo para los estilos
+import { useTranslation } from "react-i18next";
+import "../components/i18n";
 
 const PersonalProyects = () => {
-    // Array para almacenar tus proyectos. Así es más fácil añadir nuevos en el futuro.
+
+    const { t, i18n } = useTranslation();
+
     const projects = [
         {
             id: 1,
-            title: "Nivel Mario",
-            description: "Una versión digital del juego de cartas 'Skull King'",
+            title: t('marioLevelName'),
+            description: t('descriptionMarioLevel'),
             link: "/personal-proyects/mario-level",
         },{
             id: 2,
-            title: "Photo's cleaner",
-            description: "Una versión digital del juego de cartas 'Skull King'",
+            title:  t('imgCleanerName'),
+            description: t('descriptionimgCleaner'),
             link: "/personal-proyects/photos-cleaner",
         }
     ];
@@ -20,10 +24,8 @@ const PersonalProyects = () => {
     return (
         <div className="uni-projects-page">
             <header className="projects-header">
-                <h1>Proyectos Universitarios</h1>
-                <p>
-                    En mi tiempo libre he podido dedicarme a algún proyecto personal de ideas que he tenido
-                </p>
+                <h1>{t('titlePP')}</h1>
+                <p>{t('introPP')}</p>
             </header>
 
             <div className="projects-grid">

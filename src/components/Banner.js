@@ -56,10 +56,7 @@ export const Banner = () => {
                         <h1> {t("iam")}<span className="wrap"> {text} </span></h1>
                         <p> {t("intro")}</p>
                         <div>
-                            <a href="#connect" className="btn banner-btn" style={{ marginRight: '10px' }}>
-                                {t("button")} <ArrowRightCircle size={25} />
-                            </a>
-                             <a
+                            <a
                                 href="/Candela-Gutiérrez-cv.pdf"
                                 download
                                 className="btn banner-btn"

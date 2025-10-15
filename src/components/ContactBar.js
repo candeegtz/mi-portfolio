@@ -6,9 +6,9 @@ import '../css/ContactBar.css';
 export const ContactBar = () => {
     const { t } = useTranslation();
 
-    const linkedinUrl = "https://www.linkedin.com/in/tu-usuario-linkedin";
-    const githubUrl = "https://github.com/tu-usuario-github";
-    const email = "tu-correo@ejemplo.com";
+    const linkedinUrl = "https://www.linkedin.com/in/candeegtz";
+    const githubUrl = "https://github.com/candeegtz";
+    const email = "candeguti84@gmail.com";
 
     return (
         <footer className="contact-bar" id="connect">
