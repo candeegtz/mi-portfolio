@@ -28,6 +28,15 @@ export const NavBar = () => {
     // Función para el Dropdown: Comprueba si alguna sub-ruta está activa
     const isProjectRouteActive = projects.some(p => location.pathname.startsWith(p.link));
 
+    // Función para ir a la sección de contacto
+    const handleScrollToContact = (e) => {
+        e.preventDefault();
+        const contactSection = document.getElementById('connect'); // Asumiendo que tu sección tiene id="connect"
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
 
     return (
         <Navbar expand="lg" className="nav-bar">
@@ -45,9 +54,10 @@ export const NavBar = () => {
                     {t("home")}
                 </Nav.Link>
                 <Nav.Link
-                    as={NavLink} 
-                    to="/contact"
-                    className={getNavLinkClass}
+                    as="a" 
+                    href="#connect" 
+                    className="nav-link" 
+                    onClick={handleScrollToContact}
                 >
                     {t("contact")}
                 </Nav.Link>

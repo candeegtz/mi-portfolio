@@ -1,0 +1,75 @@
+.contact-bar {
+    background: #390101;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.contact-bar h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-bar p {
+    color: #B8B8B8;
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-bar .social-icon {
+    display: inline-block;
+}
+
+.contact-bar .social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin: 0 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-bar .social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-bar .social-icon a:hover::before {
+    transform: scale(1);
+}
+
+.contact-bar .social-icon a svg {
+    z-index: 1;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-bar .social-icon a:hover svg {
+    color: #121212;
+}
+
+/* Estilos para móviles */
+@media (max-width: 767.98px) {
+    .contact-bar {
+        text-align: center;
+    }
+    .contact-bar .text-md-start {
+        text-align: center !important;
+        margin-top: 15px;
+        order: 2; /* Mueve el copyright al final en móviles */
+    }
+    .contact-bar .col-md-4:nth-child(2) {
+        order: 1; /* Mueve los iconos al principio */
+    }
+}

@@ -55,17 +55,19 @@ export const Banner = () => {
                         <span className="tagline"> {t("welcome")} </span>
                         <h1> {t("iam")}<span className="wrap"> {text} </span></h1>
                         <p> {t("intro")}</p>
-                         <a
-                            href="/Candela-Gutiérrez-cv.pdf"
-                            download
-                            className="btn banner-btn"
-                            style={{ 
-                                display: "inline-flex", 
-                                alignItems: "center", 
-                                gap: "8px"}}
-                            >
-                            {t("cv")} <ArrowRightCircle size={25} />
-                        </a>
+                        <div>
+                            <a href="#connect" className="btn banner-btn" style={{ marginRight: '10px' }}>
+                                {t("button")} <ArrowRightCircle size={25} />
+                            </a>
+                             <a
+                                href="/Candela-Gutiérrez-cv.pdf"
+                                download
+                                className="btn banner-btn"
+                                style={{ display: "inline-flex", alignItems: "center", gap: "8px"}}
+                                >
+                                {t("cv")}
+                            </a>
+                        </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" className="img-fluid" /> {/* <-- img-fluid para responsividad */}

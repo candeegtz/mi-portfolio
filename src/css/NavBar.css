@@ -1,11 +1,8 @@
 .nav-bar {
     background-color: #390101 !important;
     color: #fff;
+    z-index: 1030;
     align-items: center; 
-}
-
-.navbar-btn {
-    padding: 0 0.5rem; 
 }
 
 .nav-bar .nav-link {
@@ -24,6 +21,18 @@
 .nav-bar .nav-link.active {
     color: #ffd700 !important;
     font-weight: bold;
+}
+
+.nav-bar .nav-link[href="#connect"] {
+    color: #fff !important; 
+}
+.nav-bar .nav-link[href="#connect"]:focus,
+.nav-bar .nav-link[href="#connect"]:active {
+    color: #fff !important;
+}
+
+.navbar-btn {
+    padding: 0 0.5rem; 
 }
 
 .navbar-btn .dropdown-toggle {
@@ -59,17 +68,20 @@
     color: #390101 !important;
 }
 
-@media (max-width: 991.98px) { /* Punto de quiebre 'lg' de Bootstrap */
-  .language-switcher-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+.navbar-collapse.show {
+    background-color: #390101; 
 }
 
-/* Estilos para el icono de la hamburguesa */
+@media (max-width: 991.98px) {
+    .language-switcher-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
