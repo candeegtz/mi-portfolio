@@ -9,9 +9,7 @@ export const AcmeAnsPage = () => {
     const technologies = [
         "Java",
         "Framework Acme-Ans",
-        "HTML
-        
-        ",
+        "HTML",
         "MariaDB"
     ];
 
