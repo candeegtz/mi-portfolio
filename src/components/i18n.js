@@ -61,9 +61,10 @@ i18n.use(initReactI18next).init({
             introPP: "In my free time, I've had some ideas for new projects...",
 
             // Traducciones de Mario Level
-            marioLevelName: "Mario Level",
+            marioLevelName: "Mario Level, Ángel Bros",
             descriptionMarioLevel: "A small level from the known Mario Bros video game.",
             marioLevelIntro: "Mario Level is a personal project consisting of the development of a small level of the iconic Mario Bros game, created as a demonstration of 2D video game development skills and the application of the Phaser framework.",
+            marioLevelIntro3: "As a personal touch, the designs of some characters and visual elements were subtly modified, inspired by the deep admiration of my grandfather, Ángel, for the original game.",
             marioLevelIntro2: "This project was carried out by personal initiative due to interest and enjoyment of the game, serving as a practical self-learning platform on the essential tools in browser-based game development.",
             marioLevelObj: "The main objective was the mastery of the Phaser framework to manage game logic (physics, game loop, collisions) and faithfully recreate the classic platform experience.",
             marioLevelLections: ["• Game Development Cycle (Game Loop). Deep understanding of how rendering, state updates, and user input management work in a game environment.", "• Physics Engine. Configuration and manipulation of the Phaser engine's physics to replicate the characteristic feel of retro games (gravity, momentum).", "• Collision Handling. Implementation of precise collision detection systems between the player, enemies, and world objects (tiles).", "• Asset Management. Loading and optimization of spritesheets and tilemaps for efficient performance in the browser."],
@@ -144,10 +145,9 @@ i18n.use(initReactI18next).init({
             // Traducciones de Mario Level
             marioLevelName: "Nivel de Mario",
             descriptionmarioLevel: "Un pequeño nivel del videojuego conocido Mario Bros",
-            marioLevelIntro: "Mario Level es un proyecto personal que consiste en el desarrollo de un pequeño nivel del icónico juego Mario Bros, creado como una demostración de habilidades de desarrollo de videojuegos 2D y la aplicación del framework Phaser.",
-            marioLevelIntro2: "Este proyecto se llevó a cabo por iniciativa personal debido al interés y gusto por el juego, sirviendo como una plataforma de autoaprendizaje práctico sobre las herramientas esenciales en el desarrollo de juegos basados en navegador.",
+            marioLevelIntro3: "Como un toque personal, se modificaron sutilmente los diseños de algunos personajes y elementos visuales, inspirándose en la profunda admiración de mi abuelo, Ángel, por el juego original.",
             marioLevelObj: "El objetivo principal fue el dominio del framework Phaser para gestionar la lógica del juego (físicas, game loop, colisiones) y recrear con fidelidad la experiencia clásica de plataformas.",
-            marioLevelLections: ["•  Ciclo de Desarrollo de Juegos (Game Loop). Comprensión profunda de cómo funcionan la renderización, la actualización de estado y la gestión de entradas (input) del usuario en un entorno de juego.", "•  Motor de Físicas. Configuración y manipulación de las físicas del motor de Phaser para replicar el feeling característico de los juegos retro (gravedad, momentum).", "•  Manejo de Colisiones. Implementación de sistemas de detección de colisiones precisas entre el jugador, los enemigos y los objetos del mundo (tiles).", "• Gestión de Recursos (Assets). Carga y optimización de spritesheets y mapas de mosaicos (tilemaps) para un rendimiento eficiente en el navegador."],
+            marioLevelLections: ["• Ciclo de Desarrollo de Juegos (Game Loop). Comprensión profunda de cómo funcionan la renderización, la actualización de estado y la gestión de entradas (input) del usuario en un entorno de juego.", "• Motor de Físicas. Configuración y manipulación de las físicas del motor de Phaser para replicar el feeling característico de los juegos retro (gravedad, momentum).", "• Manejo de Colisiones. Implementación de sistemas de detección de colisiones precisas entre el jugador, los enemigos y los objetos del mundo (tiles).", "• Gestión de Recursos (Assets). Carga y optimización de spritesheets y mapas de mosaicos (tilemaps) para un rendimiento eficiente en el navegador."],
             marioLevelConclusion: "El resultado de este proyecto es una prueba tangible de la capacidad de manejar físicas de juego, gráficos, y lógica de game loop para entregar experiencias interactivas a nivel de navegador.",
 
             // Traducciones de Img Cleaner

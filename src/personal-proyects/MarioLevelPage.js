@@ -22,10 +22,10 @@ export const ImgCleanerPage = () => {
     return (
         <div className="project-page">
             <header className="project-page-header">
-                <h1>Mario Level</h1>
+                <h1>Mario Level, Ángel Bros</h1>
                 <p>{t('marioLevelIntro')} </p>
                 <p>{t('marioLevelIntro2')} </p>
-                
+                <p>{t('marioLevelIntro3')} </p>         
             </header>
 
             <section className="project-section">
@@ -56,8 +56,8 @@ export const ImgCleanerPage = () => {
             <section className="project-section">
                 <h2>{t('linkRepo')}</h2>
                 <div className="repo-link-container">
-                    <a href="https://github.com/candeegtz/Acme-ANS" target="_blank" rel="noopener noreferrer" className="repo-link-button">
-                        Mario Level
+                    <a href="https://github.com/candeegtz/MARIO-LEVEL-Angel-Bros" target="_blank" rel="noopener noreferrer" className="repo-link-button">
+                        Mario Level, Ángel Bros
                     </a>
                 </div>
             </section>
