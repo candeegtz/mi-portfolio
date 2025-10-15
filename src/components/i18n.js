@@ -81,6 +81,8 @@ i18n.use(initReactI18next).init({
             imgCleanerLections: ["Design and training of a robust CNN model for multi-class image classification.", "Effective handling of unbalanced and varied datasets for training.", "Integration of the AI model into a full-stack application (frontend/backend) to process user image uploads."],
             imgCleanerConclusion: "The project will provide strong practical experience in applying deep learning techniques (CNNs) to solve a common user problem (managing phone storage) through a functional software solution.",
 
+            proxImgs: "Images of the project will be added soon.",
+
             // Traducciones de ContactBar
             contactTitle: "Contact Me",
             rightsReserved: "All Rights Reserved",
@@ -160,6 +162,8 @@ i18n.use(initReactI18next).init({
             imgCleanerObj: "",
             imgCleanerLections: [],
             imgCleanerConclusion: "",
+
+            proxImgs: "Próximamente se añadirán imágenes del proyecto.",
 
             // Traducciones de ContactBar
             contactTitle: "Contáctame",
