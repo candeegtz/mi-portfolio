@@ -68,18 +68,20 @@ export const NavBar = () => {
                     ))}
                 </NavDropdown>
             </Nav>
-                <div className="ms-auto">
-                    <button 
-                        className= "btn banner-btn" onClick={() => changeLanguage("es")}>
-                        ES
-                    </button>
-                    <button 
-                        className= "btn banner-btn"
-                        onClick={() => changeLanguage("en")}
-                    >
-                        EN
-                    </button>
-                </div>
+            <Nav className="ms-auto">
+                <Nav.Item className="language-switcher-container">
+                        <button 
+                            className= "btn banner-btn" onClick={() => changeLanguage("es")}>
+                            ES
+                        </button>
+                        <button 
+                            className= "btn banner-btn"
+                            onClick={() => changeLanguage("en")}
+                        >
+                            EN
+                        </button>
+                </Nav.Item>
+            </Nav>
             </Navbar.Collapse>
         </Container>
             </Navbar>
