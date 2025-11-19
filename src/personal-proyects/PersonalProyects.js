@@ -15,7 +15,7 @@ const PersonalProyects = () => {
             link: "/personal-proyects/mario-level",
         },{
             id: 2,
-            title:  t('imgCleanerName'),
+            title:  t('Cleanery'),
             description: t('descriptionimgCleaner'),
             link: "/personal-proyects/photos-cleaner",
         }

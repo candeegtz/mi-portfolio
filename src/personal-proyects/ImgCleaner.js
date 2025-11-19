@@ -5,7 +5,6 @@ import "../components/i18n";
 export const ImgCleanerPage = () => {
 
     const { t, i18n } = useTranslation();
-    // Lista de tecnologías que utilizaste
     const technologies = [
         "Java",
         "ANTLR",
@@ -13,10 +12,8 @@ export const ImgCleanerPage = () => {
         "Gradle"
     ];
 
-    // Array para las imágenes de la galería
     const images = [
-        // { src: skullKingImage1, alt: "Vista del tablero de juego" },
-        // { src: skullKingImage2, alt: "Ejemplo de una jugada" }
+        
     ];
 
     
@@ -24,7 +21,7 @@ export const ImgCleanerPage = () => {
     return (
         <div className="project-page">
             <header className="project-page-header">
-                <h1>Photo Cleaner</h1>
+                <h1>Cleanery</h1>
                 <p>{t('imgCleanerIntro')} </p>
                 <p>{t('imgCleanerIntro2')} </p>
                 <p>{t('imgCleanerIntro3')} </p>
@@ -57,15 +54,18 @@ export const ImgCleanerPage = () => {
                 </ul>
             </section>
 
+            */}
+
             <section className="project-section">
                 <h2>{t('linkRepo')}</h2>
                 <div className="repo-link-container">
-                    <a href="https://github.com/candeegtz/Acme-ANS" target="_blank" rel="noopener noreferrer" className="repo-link-button">
-                        Mario Level
+                    <a href="https://github.com/candeegtz/Cleanery" target="_blank" rel="noopener noreferrer" className="repo-link-button">
+                        Cleanery
                     </a>
                 </div>
             </section>
 
+            {/*
             <section className="project-section">
                 <h2>{t('conclusionTitle')}</h2>
                 <div>
